@@ -128,5 +128,13 @@
 // default:
 // console.log("Invalid");
 // }
-let s1="hello ashish chandel how are you?";
-console.log(s1.split());
+// let s1="hello ashish chandel how are you?";
+// console.log(s1.split());
+
+let BigInt=Number(prompt("Enter a no: "));
+if(BigInt%2==0){
+    console.log("Even");
+}
+else{
+    console.log("Odd");
+}
