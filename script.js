@@ -131,10 +131,24 @@
 // let s1="hello ashish chandel how are you?";
 // console.log(s1.split());
 
-let BigInt=Number(prompt("Enter a no: "));
-if(BigInt%2==0){
-    console.log("Even");
-}
-else{
-    console.log("Odd");
+// let BigInt=Number(prompt("Enter a no: "));
+// if(BigInt%2==0){
+//     console.log("Even");
+// }
+// else{
+//     console.log("Odd");
+// }
+
+
+
+// for(let i=1;i<=5;i++){
+//     for(let j=1;j<=i;j++){
+//         console.log(" *");
+//     }
+//     console.log();
+// }
+
+
+for(let i=0;i<=10;i++){
+    console.log(i);
 }
