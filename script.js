@@ -162,4 +162,8 @@ else{
     console.log("You are not eligible for vote");
 }
 
-  
+        Que=2;
+    let table=Number(prompt("Enter a no to print its table: "));
+    for(let i=1;i<=10;i++){
+        console.log(table + " * " +i+" = "+(table*i));
+    }
