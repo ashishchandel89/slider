@@ -153,17 +153,27 @@
 //     console.log(i);
 // }
 
-    Que=1;
-let User=prompt("Enter your age: ");
-if(User>=18){
-    console.log("You are eligible for vote");
-}
-else{
-    console.log("You are not eligible for vote");
-}
+//     Que=1;
+// let User=prompt("Enter your age: ");
+// if(User>=18){
+//     console.log("You are eligible for vote");
+// }
+// else{
+//     console.log("You are not eligible for vote");
+// }
 
-        Que=2;
-    let table=Number(prompt("Enter a no to print its table: "));
-    for(let i=1;i<=10;i++){
-        console.log(table + " * " +i+" = "+(table*i));
+//         Que=2;
+//     let table=Number(prompt("Enter a no to print its table: "));
+//     for(let i=1;i<=10;i++){
+//         console.log(table + " * " +i+" = "+(table*i));
+//     }
+
+    Que=3;
+     let greater=0;
+    for(let i=1;i<=15;i++){
+       if(i>=8){
+        greater++;
+        console.log(i);
+       }
     }
+    console.log("Greater than 8: "+greater);
