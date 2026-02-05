@@ -149,6 +149,17 @@
 // }
 
 
-for(let i=0;i<=10;i++){
-    console.log(i);
+// for(let i=0;i<=10;i++){
+//     console.log(i);
+// }
+
+    Que=1;
+let User=prompt("Enter your age: ");
+if(User>=18){
+    console.log("You are eligible for vote");
 }
+else{
+    console.log("You are not eligible for vote");
+}
+
+  
