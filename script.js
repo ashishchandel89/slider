@@ -153,6 +153,8 @@
 //     console.log(i);
 // }
 
+
+
 //     Que=1;
 // let User=prompt("Enter your age: ");
 // if(User>=18){
@@ -162,18 +164,176 @@
 //     console.log("You are not eligible for vote");
 // }
 
+
+
 //         Que=2;
 //     let table=Number(prompt("Enter a no to print its table: "));
 //     for(let i=1;i<=10;i++){
 //         console.log(table + " * " +i+" = "+(table*i));
 //     }
 
-    Que=3;
-     let greater=0;
-    for(let i=1;i<=15;i++){
-       if(i>=8){
-        greater++;
-        console.log(i);
-       }
+
+
+    // Que=3;
+    //  let greater=0;
+    // for(let i=1;i<=15;i++){
+    //    if(i>=8){
+    //     greater++;
+    //     console.log(i);
+    //    }
+    // }
+    // console.log("Greater than 8: "+greater);
+
+
+
+    //Que=4;
+    // let password="Ashish@2006";
+    // let user=prompt("Enter your password: ");
+    // if(user===password){
+    //     alert("Login successful");
+    // }
+    // else{
+    //     alert("Login failed. Please try again.");
+    // }
+
+
+
+    // Que=5;
+    // let enter_password=prompt("Enter new password: ");
+    // for(let i=0;i<=3;i++){
+    // let confirm_password=prompt("Confirm your password: ");
+    // if(enter_password===confirm_password){
+    //     alert("Password matched successfully");
+    //     break;
+    // }
+    // else if(enter_password!==confirm_password){
+    //     alert("Password did not match. Please try again.");
+    // }
+    //     if(i===2){
+    //        alert("Password did not match. You have only one last attempt.");
+    //     }
+    //     if(i===3){{
+    //         alert("Sorry, Password did not match. You have no more attempts left.");
+    //         break;
+    //     }
+    // }
+    // }
+    
+
+
+    //Que=6;
+    //     let count=0;
+    //     while(true){
+    //     let user=prompt("Enter YES to continue or STOP to exit: "); 
+    //     if(user.toUpperCase()==="YES"){
+    //      count++;
+    //     }
+    //     else if(user.toUpperCase()==="STOP"){
+    //     break;
+    //     }
+    //     }
+    //  console.log("You entered YES "+count+" times.");
+
+
+
+    //Que=7;
+    // let count=0;
+    // for(let i=1;i<=50;i++){
+    //     if(i%7==0){
+    //         console.log(i);
+    //         count++;
+    //     }
+    // }
+    // console.log("Total count of numbers divisible by 7 between 1 and 50: "+count);
+
+
+
+    //Que=8;
+    // let sum=0;
+    // for(let i=1;i<=30;i++){
+    //     if(i%2==1){
+    //         console.log(i);
+    //         sum=sum+i;
+    //     }
+    // }
+
+    // console.log("Sum of odd numbers between 1 and 30: "+sum);
+
+
+
+
+    //Que=9;
+    // while(true){
+    //     let user=Number(prompt("Enter a no: "));
+    //     if(user%2===0){
+    //         break;
+    //     }
+    // }
+
+
+
+    //Que=10;
+//     let start=Number(prompt("Enter a starting no: "));
+//     let end=Number(prompt("Enter an ending no: "));
+//     if(start<=end){
+//     for(let i=start;i<=end;i++){
+//         console.log(i);
+//     }
+// }
+// else{
+//     console.log("Invalid input. Starting number should be less than or equal to ending number.");
+// }
+
+
+
+    //Que=11;
+
+//     let count=0;
+//     let start=Number(prompt("Enter a starting no: "));
+//     let end=Number(prompt("Enter an ending no: "));
+//     if(start<=end){
+//      for(let i=start;i<=end;i++){
+//         if(i%2===1){
+//             console.log(i);
+//             count++;
+//             if(count===3){
+//                 break;
+//             }
+//         }
+        
+//     }
+// }
+    
+
+
+    //Que=12;
+    // let p_count=0;
+    // let n_count=0;
+    // for(let i=0;i<5;i++){
+    //     let user=Number(prompt("Enter a no: "));
+    //     if(user>=0){
+    //         p_count++;
+    //     }
+    //     else if(user<0){
+    //         n_count++;
+    //     }
+    // }
+    // console.log("Total positive numbers entered: "+p_count);
+    // console.log("Total negative numbers entered: "+n_count);
+
+
+    //Que=13;
+
+    let amount=Number(prompt("Enter deposit balance: "));
+    if(amount>1000){
+        alert("You have assigned a limit 1000Rs. for deposit.");
+        amount=1000;
     }
-    console.log("Greater than 8: "+greater);
+    for(let i=0;i<3;i++){
+        let withdraw=Number(prompt("Enter amount to withdraw: "));
+        amount-=withdraw;
+        if(withdraw>amount){
+            alert("Insufficient balance. Transaction failed.");
+            break;
+        }
+    }
