@@ -380,7 +380,12 @@
     
     
    
-        function sum(...num){
-            console.log(num);
+        // function sum(...num){
+        //     console.log(num);
+        // }
+        // sum(1,2,3,4,5,6,7,8,9,10);
+
+        function abcd(a,b,c,d=10){
+            console.log(a+b+c+d);   
         }
-        sum(1,2,3,4,5,6,7,8,9,10);
+        abcd(2,3,4);
