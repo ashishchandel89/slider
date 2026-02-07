@@ -156,7 +156,7 @@
 
 
 //     Que=1;
-// let User=prompt("Enter your age: ");
+// let User=Number(prompt("Enter your age: "));
 // if(User>=18){
 //     console.log("You are eligible for vote");
 // }
@@ -324,16 +324,41 @@
 
     //Que=13;
 
-    let amount=Number(prompt("Enter deposit balance: "));
-    if(amount>1000){
-        alert("You have assigned a limit 1000Rs. for deposit.");
-        amount=1000;
-    }
-    for(let i=0;i<3;i++){
-        let withdraw=Number(prompt("Enter amount to withdraw: "));
-        amount-=withdraw;
-        if(withdraw>amount){
-            alert("Insufficient balance. Transaction failed.");
+    // let amount=Number(prompt("Enter deposit balance: "));
+    // if(amount>1000){
+    //     alert("You have assigned a limit 1000Rs. for deposit.");
+    //     amount=1000;
+    // }
+    // for(let i=0;i<3;i++){
+    //     let withdraw=Number(prompt("Enter amount to withdraw: "));
+    //     amount-=withdraw;
+    //     if(withdraw>amount){
+    //         alert("Insufficient balance. Transaction failed.");
+    //         break;
+    //     }
+    // }
+
+
+    //Que=14;
+
+    let attempts=3;
+    let password="Ashish@2006";
+    while(attempts>0){
+        let user=prompt("Enter your password: ");
+        if(user===null){
+            console.log("Login cancelled.");
+        }else{
+        attempts--;
+        if(user===password){
+            console.log("Login successful.");
             break;
         }
+        else{
+            console.log("Incorrect password. You have "+attempts+" attempts left.");
+        }
     }
+        
+    }
+    
+    
+   
