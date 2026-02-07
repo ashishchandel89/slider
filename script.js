@@ -323,42 +323,64 @@
 
 
     //Que=13;
+//     let totalAmount = 1000;
+//     let count = 3;
+//     while (totalAmount > 0) {
+//     let input = prompt("Enter the amount to withdraw:");
+//     if (input === null) {
+//         console.log("Withdrawal cancelled.");
+//         break;
+//     }
+//     let withdraw = Number(input);
+//     if (isNaN(withdraw) || withdraw <= 0) {
+//         console.log("Invalid input. Please enter a valid amount.");
+//         continue;
+//     }
+//     if (withdraw > totalAmount) {
+//         console.log("Insufficient balance. Please enter a valid amount.");
+//         continue;
+//     }
+//     totalAmount -= withdraw;
+//     console.log("Remaining amount: " + totalAmount);
+//     count--;
+//     if (count === 0) {
+//         console.log("You have no more attempts left.");
+//         break;
+//     }
+// }
 
-    // let amount=Number(prompt("Enter deposit balance: "));
-    // if(amount>1000){
-    //     alert("You have assigned a limit 1000Rs. for deposit.");
-    //     amount=1000;
-    // }
-    // for(let i=0;i<3;i++){
-    //     let withdraw=Number(prompt("Enter amount to withdraw: "));
-    //     amount-=withdraw;
-    //     if(withdraw>amount){
-    //         alert("Insufficient balance. Transaction failed.");
-    //         break;
-    //     }
-    // }
+    
+    
+    
 
-
+  
     //Que=14;
 
-    let attempts=3;
-    let password="Ashish@2006";
-    while(attempts>0){
-        let user=prompt("Enter your password: ");
-        if(user===null){
-            console.log("Login cancelled.");
-        }else{
-        attempts--;
-        if(user===password){
-            console.log("Login successful.");
-            break;
-        }
-        else{
-            console.log("Incorrect password. You have "+attempts+" attempts left.");
-        }
-    }
+    // let attempts=3;
+    // let password="Ashish@2006";
+    // while(attempts>0){
+    //     let user=prompt("Enter your password: ");
+    //     if(user===null){
+    //         console.log("Login cancelled.");
+    //     }else{
+    //     attempts--;
+    //     if(user===password){
+    //         console.log("Login successful.");
+    //         break;
+    //     }
+    //     else if(attempts===0){
+    //         console.log("Incorrect password. You have no more attempts left. Login failed.");
+    //     }
+    //     else {
+    //         console.log("Incorrect password. You have "+attempts+" attempts left.");
+    //     }
+    // }
         
-    }
+    // }
     
     
    
+        function sum(...num){
+            console.log(num);
+        }
+        sum(1,2,3,4,5,6,7,8,9,10);
