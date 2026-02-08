@@ -422,14 +422,25 @@
 
         //-----------------------------Anonymous Funtion---------------------------
 
-        setTimeout(function(){              // setTimeout is a built-in function in JavaScript that allows you to execute a function after a specified delay. The first argument is the function to be executed, and the second argument is the delay in milliseconds.
-            console.log("Hello World");
-        },3000);
+        // setTimeout(function(){              // setTimeout is a built-in function in JavaScript that allows you to execute a function after a specified delay. The first argument is the function to be executed, and the second argument is the delay in milliseconds.
+        //     console.log("Hello World");
+        // },3000);
         
 
 
         
-        //-----------------------------fat arrow Funtion---------------------------
+        // //-----------------------------fat arrow Funtion---------------------------
 
-        const abcd=(a,b) => console.log(a*b);
-        abcd(10,20);
+        // const abcd=(a,b) => console.log(a*b);
+        // abcd(10,20);
+
+
+
+        
+        //-----------------------------Destructured Parameter---------------------------
+
+        function abcd({name,age,city,country}){
+            console.log(`Employee Name is: ${name} who is ${age} years old and lives in ${city}, ${country}`);
+        }
+
+        abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"});
