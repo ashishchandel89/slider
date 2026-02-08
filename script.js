@@ -529,19 +529,46 @@
 
 
 
-        //-----------------------------Array---------------------------
+        // //-----------------------------Array---------------------------
 
-        let arr=[1,2,3,4,5];
-        let arr2=new Array(4,5,6,7,8);
+        // let arr=[1,2,3,4,5];
+        // let arr2=new Array(4,5,6,7,8);
 
-        console.log(arr[4]);    //accessing
-        console.log(arr2[3]);
+        // console.log(arr[4]);    //accessing
+        // console.log(arr2[3]);
 
-        console.log(arr.push());    //add element at the end of the array
-        console.log(arr2.shift());   //remove element from the beginning of the array
-        console.log(arr.unshift(0));   //add element at the beginning of the array
-        console.log(arr.pop());     //remove element from the end of the array
-        console.log(arr.indexOf(3));    //return the index of the first occurrence of the specified element in the array, or -1 if it is not found.
-        console.log(arr.length);
-        console.log(arr.join("-"));    //join all elements of the array into a string, separated by the specified separator.
-        console.log(arr.slice(1,4));    //slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+        // console.log(arr.push());    //add element at the end of the array
+        // console.log(arr2.shift());   //remove element from the beginning of the array
+        // console.log(arr.unshift(0));   //add element at the beginning of the array
+        // console.log(arr.pop());     //remove element from the end of the array
+        // console.log(arr.indexOf(3));    //return the index of the first occurrence of the specified element in the array, or -1 if it is not found.
+        // console.log(arr.length);
+        // console.log(arr.join("-"));    //join all elements of the array into a string, separated by the specified separator.
+        // console.log(arr.slice(1,4));    //slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+
+
+
+
+         //-----------------------------Object---------------------------
+
+         let Employee={
+            name:"Ashish Chandel",
+            age:20,
+            city:"Fatehabad",
+            country:"India",
+            cgpa:{
+                sem1: 7.9,
+                sem2: 7.3,
+                sem3: 7.43,
+                sem4: 9.04
+            }
+         };
+         console.log(Employee.name);    //accessing
+         console.log(Employee["age"]);
+         console.log(Employee.cgpa.sem4);
+
+
+
+
+
