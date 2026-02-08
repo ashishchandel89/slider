@@ -439,8 +439,23 @@
         
         //-----------------------------Destructured Parameter---------------------------
 
-        function abcd({name,age,city,country}){
-            console.log(`Employee Name is: ${name} who is ${age} years old and lives in ${city}, ${country}`);
+        // function abcd({name,age,city,country}){
+        //     console.log(`Employee Name is: ${name} who is ${age} years old and lives in ${city}, ${country}`);
+        // }
+
+        // abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"});
+
+
+        
+        //-----------------------------Rest Parameter---------------------------
+
+        function abcd(...nums){
+            console.log(nums);
+            let sum=0;
+            for(let i=0;i<nums.length;i++){
+               sum=sum+nums[i];
+            }
+            console.log("Sum of all numbers is: "+sum);
         }
 
-        abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"});
+        abcd(1,2,3,4,5,6,7,8,9,10);
