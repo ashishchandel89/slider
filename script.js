@@ -449,13 +449,36 @@
         
         //-----------------------------Rest Parameter---------------------------
 
-        function abcd(...nums){
-            console.log(nums);
-            let sum=0;
-            for(let i=0;i<nums.length;i++){
-               sum=sum+nums[i];
-            }
-            console.log("Sum of all numbers is: "+sum);
-        }
+        // function abcd(...nums){
+        //     console.log(nums);
+        //     let sum=0;
+        //     for(let i=0;i<nums.length;i++){
+        //        sum=sum+nums[i];
+        //     }
+        //     console.log("Sum of all numbers is: "+sum);
+        // }
 
-        abcd(1,2,3,4,5,6,7,8,9,10);
+        // abcd(1,2,3,4,5,6,7,8,9,10);
+
+
+
+        
+        //-----------------------------Spread argument---------------------------
+
+        function spread(...nums){
+            console.log(nums);
+            for(let i=0;i<nums.length-1;i++){
+                for(let j=i+1;j<nums.length;j++){
+                    if(nums[i]>nums[j]){
+                        let temp=0;
+                         temp=nums[i];
+                        nums[i]=nums[j];
+                        nums[j]=temp;
+                    }
+                }
+            }
+            console.log("Sorted array in ascending order: [ "+nums+" ]");
+        }
+        let arr=[110,20,80,12,50,60,7,55,100];
+        console.log(spread(...arr));     // Spread operator is used to spread the elements of an array or object into individual elements. In the above code, we are using the spread operator to spread the elements of the arr array into individual arguments for the spread function.
+            
