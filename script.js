@@ -571,6 +571,11 @@
 
 
 
+        
+
+        //===========================Basic Function (Easy Questions)==========================
+
+
 
         //-----------------------------QUE=1--------------------------
 
@@ -681,5 +686,63 @@
         //     console.log("Time's up!");
         // },2000);
 
+
+
+
+
+        //===========================Functions Thinking Logical Task (Intermediate)==========================
+
+
+
+        //-----------------------------Que=1--------------------------
+
+        // function runTwice(fn){
+        //     fn();
+        //     fn();
+        // }
+        // runTwice(function(){
+        //     console.log("Hello from Ashish Chandel Developer");
+        // });
+
+
+
+
+
+        //-----------------------------Que=2--------------------------
+
+        // function pure(a,b=80){
+        //     console.log(a+b);
+        // }
+        // pure(10);
+        // pure(10);
+        // pure(10);
+
+        // let num=30;
+        // function impure(a){
+        //     console.log(num+Math.random()+a);
+        // }
+        // impure(10);
+        // impure(10);
+        // impure(10);
+
+
+
+
+        //-----------------------------Que=3--------------------------
+
+        // function abcd({name,age,city,country}){
+        //     console.log(`Employee Name is: ${name} who is ${age} years old and lives in ${city}, ${country}`);
+        // }
+        // abcd({name:"ashish",age:20,city:"fatehabad",country:"india"});
+
+
+
+        //-----------------------------Que=6--------------------------
+
+        let arr=[20,21,55,34,90,23]
+        let arr2=arr.filter(function(val){
+            return val%2===0;
+        })
+        console.log(arr2);
 
 
