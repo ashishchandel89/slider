@@ -385,7 +385,34 @@
         // }
         // sum(1,2,3,4,5,6,7,8,9,10);
 
-        function abcd(a,b,c,d=10){
-            console.log(a+b+c+d);   
-        }
-        abcd(2,3,4);
+        // function abcd(a,b,c,d=10){
+        //     console.log(a+b+c+d);   
+        // }
+        // abcd(2,3,4);
+
+
+        //-----------------------------High Order Funtion---------------------------
+
+        // function abcd(a,b){     //high order function is a function which takes another function as an argument or returns a function as a result.
+        //     console.log(a**b);
+          
+        // }
+        // abcd(function(){return 2;}(),function(){return 10;}());     //callback function is a function which is passed as an argument to another function and is executed after some operation is completed. In the above code, we are passing two anonymous functions as arguments to the abcd function, which are executed to return the values of a and b.
+    
+           
+
+
+        //-----------------------------First Class Funtion---------------------------
+
+        // function abcd(a,b){
+        //     console.log(a+b)
+        // }
+        //  abcd(10,function(){return 80;}());
+
+
+
+
+        //-----------------------------Arrow Function---------------------------
+
+        // let abcd=(a,b)=>a+b;
+        // console.log(abcd(10,10));
