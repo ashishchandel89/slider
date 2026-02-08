@@ -552,23 +552,134 @@
 
          //-----------------------------Object---------------------------
 
-         let Employee={
-            name:"Ashish Chandel",
-            age:20,
-            city:"Fatehabad",
-            country:"India",
-            cgpa:{
-                sem1: 7.9,
-                sem2: 7.3,
-                sem3: 7.43,
-                sem4: 9.04
-            }
-         };
-         console.log(Employee.name);    //accessing
-         console.log(Employee["age"]);
-         console.log(Employee.cgpa.sem4);
+        //  let Employee={
+        //     name:"Ashish Chandel",
+        //     age:20,
+        //     city:"Fatehabad",
+        //     country:"India",
+        //     cgpa:{
+        //         sem1: 7.9,
+        //         sem2: 7.3,
+        //         sem3: 7.43,
+        //         sem4: 9.04
+        //     }
+        //  };
+        //  console.log(Employee.name);    //accessing
+        //  console.log(Employee["age"]);
+        //  console.log(Employee.cgpa.sem4);
 
 
+
+
+
+        //-----------------------------QUE=1--------------------------
+
+        //  function sayHello(){
+        //     console.log("Hey Javascript");
+        //      }
+        //     sayHello();
+
+
+
+
+        //-----------------------------QUE=2--------------------------
+
+        //  function add(a,b){
+        //     console.log(a+b);
+        //     }
+        //     add(40,50);
+
+
+
+        //-----------------------------QUE=3--------------------------
+
+        // function parameter(name="GUEST"){
+        //     console.log(`Hi ${name}`);
+        // }
+        // parameter("Ashish");
+
+
+
+
+        //-----------------------------QUE=4--------------------------
+
+        // let sum=0;
+        // function abcd(...nums){
+        //     console.log(nums);
+        //     for(let i=0;i<nums.length;i++){
+        //         sum=sum+nums[i];
+        //     }
+        //     console.log(sum);
+        // }
+        // abcd(1,2,3,4,5,6,7,8,9,10);
+
+
+
+
+        //-----------------------------Que=5---------------------------
+
+        // function abcd() {
+        //     (function (){
+        //         console.log("I run Instantly");
+        //     })();
+        // }
+        // abcd();
+    
+
+
+
+        //-----------------------------Que=6---------------------------
+
+        // function outer(){
+        //     let a=10;
+        //     function inner(){
+        //         console.log(++a);
+        //     }
+        //  inner();
+        // }
+        // outer();
+
+
+
+        //-----------------------------Que=7---------------------------
+
+        // let fruits=["Apple","Banana","Mango","Orange"];
+        // console.log(fruits);
+        // fruits.push("Grapes")
+        // console.log(fruits);
+        // fruits.shift()
+        // console.log(fruits);
+
+
+
+        //-----------------------------Que=8---------------------------
+
+        // let arr1=[1,2,3,4,5];
+        // for(let i=0;i<arr1.length;i++){
+        //     console.log(arr1[i]);
+        // }
+
+
+
+
+        //-----------------------------Que=9---------------------------
+
+        // let person={
+        //     name:"Ashish Chandel",
+        //     age:20,
+        //     city:"Fatehabad",
+        // };
+        // for(let i in person){
+        //     console.log(`${i} : ${person[i]}`);
+        // }
+
+
+
+        //-----------------------------Que=10---------------------------
+
+        // setTimeout(function(){
+        //     console.log("Time's up!");
+        // },2000);
 
 
 
