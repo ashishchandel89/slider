@@ -590,9 +590,9 @@
         //-----------------------------QUE=2--------------------------
 
         //  function add(a,b){
-        //     console.log(a+b);
+        //     return a+b;
         //     }
-        //     add(40,50);
+        //     console.log(add(40,50));
 
 
 
@@ -623,12 +623,12 @@
 
         //-----------------------------Que=5---------------------------
 
-        // function abcd() {
-        //     (function (){
-        //         console.log("I run Instantly");
-        //     })();
-        // }
-        // abcd();
+        
+            // (function (){
+            //     console.log("I run Instantly");
+            // })();
+       
+       
     
 
 
@@ -739,10 +739,22 @@
 
         //-----------------------------Que=6--------------------------
 
-        let arr=[20,21,55,34,90,23]
-        let arr2=arr.filter(function(val){
-            return val%2===0;
-        })
-        console.log(arr2);
+        // let arr=[20,21,55,34,90,23]
+        // let arr2=arr.filter(function(val){
+        //     return val%2===0;
+        // })
+        // console.log(arr2);
 
+
+
+
+        //----------------------------Que=7--------------------------
+
+        function abcd(...nums){
+            let ans=nums.reduce(function(acc,val){
+                return acc+val;
+            },0);
+            console.log(ans);
+        }
+        abcd(1,2,3,4,5,6,7,8,9,10);
 
