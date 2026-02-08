@@ -416,3 +416,20 @@
 
         // let abcd=(a,b)=>a+b;
         // console.log(abcd(10,10));
+
+        
+
+
+        //-----------------------------Anonymous Funtion---------------------------
+
+        setTimeout(function(){              // setTimeout is a built-in function in JavaScript that allows you to execute a function after a specified delay. The first argument is the function to be executed, and the second argument is the delay in milliseconds.
+            console.log("Hello World");
+        },3000);
+        
+
+
+        
+        //-----------------------------fat arrow Funtion---------------------------
+
+        const abcd=(a,b) => console.log(a*b);
+        abcd(10,20);
