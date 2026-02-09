@@ -751,10 +751,14 @@
         //----------------------------Que=7--------------------------
 
         function abcd(...nums){
-            let ans=nums.reduce(function(acc,val){
-                return acc+val;
+            let ans1=nums.reduce(function(acc,ass){
+                return acc+ass;
             },0);
-            console.log(ans);
+            console.log(ans1);
+
         }
         abcd(1,2,3,4,5,6,7,8,9,10);
+
+
+
 
