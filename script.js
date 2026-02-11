@@ -741,16 +741,26 @@
         //-----------------------------Que=4 (Normal Function and Arrow Function)---------------------------------
 
        
-        let obj={
-                name:"Ashish Chandel",
-                fnc:function(){
-                    console.log(this);
-                },
-                fnc2:()=>{
-                    console.log(this);
-                }
-        };
+        // let obj={
+        //         name:"Ashish Chandel",
+        //         fnc:function(){
+        //             console.log(this);
+        //         },
+        //         fnc2:()=>{
+        //             console.log(this);
+        //         }
+        // };
 
-        obj.fnc();
-        obj.fnc2();
+        // obj.fnc();
+        // obj.fnc2();
 
+
+
+
+        //-----------------------------Que=11 map()---------------------------
+
+        let arr=[1,2,3,4,5,6,7,8,9,10];
+        let newarr=arr.map(function(val){
+            return val*val;
+        })
+        console.log(newarr);
