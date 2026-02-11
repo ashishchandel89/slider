@@ -780,8 +780,26 @@
 
         //-----------------------------Que=13 reduce()---------------------------
 
-        let salary=[10000,20000,30000,40000,50000];
-        let totalsalary=salary.reduce(function(acc,val){
-            return acc+val;
-        },0)
-        console.log(totalsalary);
+        // let salary=[10000,20000,30000,40000,50000];
+        // let totalsalary=salary.reduce(function(acc,val){
+        //     return acc+val;
+        // },0)
+        // console.log(totalsalary);
+
+
+
+
+        //-----------------------------Que=14 some() & every()---------------------------
+
+        //some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value. every() method tests whether all elements in the array pass the test implemented by the provided function. It also returns a Boolean value.
+        let arr=["Ashish","John","Om","Satyarth"];
+        let CheckSome=arr.some(function(val){
+            return val.length<4;
+        });
+        console.log(CheckSome);
+
+        //every() method tests whether all elements in the array pass the test implemented by the provided function. It also returns a Boolean value.
+        let CheckEvery=arr.every(function(val){
+            return val.length<4;
+        });
+        console.log(CheckEvery);
