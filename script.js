@@ -810,9 +810,12 @@
 
         let obj={
             name:"Ashish Chandel",
-            age:20
-        };
-        Object.freeze(obj);   // Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In essence the object is made effectively immutable. The method returns the passed object.
+             age:20
+         };
+        // Object.freeze(obj);
+           // Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In essence the object is made effectively immutable. The method returns the passed object.
         obj.name="Ritik Thakur";
+        obj.email="chandel078ashish@gmail.com";
         console.log(obj);
 
+        
