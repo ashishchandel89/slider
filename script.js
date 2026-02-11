@@ -729,9 +729,28 @@
 
 
         //-----------------------------Que=3 (Destructuring)---------------------------------
-        
-        function abcd({name,age,city,country}){
-            console.log(name);
-            console.log(age);
-        }
-        abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"})
+
+        // function abcd({name,age,city,country}){
+        //     console.log(name);
+        //     console.log(age);
+        // }
+        // abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"})
+
+
+
+        //-----------------------------Que=4 (Normal Function and Arrow Function)---------------------------------
+
+       
+        let obj={
+                name:"Ashish Chandel",
+                fnc:function(){
+                    console.log(this);
+                },
+                fnc2:()=>{
+                    console.log(this);
+                }
+        };
+
+        obj.fnc();
+        obj.fnc2();
+
