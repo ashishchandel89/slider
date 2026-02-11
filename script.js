@@ -792,14 +792,27 @@
         //-----------------------------Que=14 some() & every()---------------------------
 
         //some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value. every() method tests whether all elements in the array pass the test implemented by the provided function. It also returns a Boolean value.
-        let arr=["Ashish","John","Om","Satyarth"];
-        let CheckSome=arr.some(function(val){
-            return val.length<4;
-        });
-        console.log(CheckSome);
+        // let arr=["Ashish","John","Om","Satyarth"];
+        // let CheckSome=arr.some(function(val){
+        //     return val.length<4;
+        // });
+        // console.log(CheckSome);
 
-        //every() method tests whether all elements in the array pass the test implemented by the provided function. It also returns a Boolean value.
-        let CheckEvery=arr.every(function(val){
-            return val.length<4;
-        });
-        console.log(CheckEvery);
+        // //every() method tests whether all elements in the array pass the test implemented by the provided function. It also returns a Boolean value.
+        // let CheckEvery=arr.every(function(val){
+        //     return val.length<4;
+        // });
+        // console.log(CheckEvery);
+
+
+
+        //-----------------------------Que=15 freeze() & seal()-----------------------------------------
+
+        let obj={
+            name:"Ashish Chandel",
+            age:20
+        };
+        Object.freeze(obj);   // Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In essence the object is made effectively immutable. The method returns the passed object.
+        obj.name="Ritik Thakur";
+        console.log(obj);
+
