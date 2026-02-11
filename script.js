@@ -706,19 +706,32 @@
         // })
         
 
+
+
         //-----------------------------Que=2 (Pure & Inpure Function)--------------------------
 
-        function pure(a,b){
-            return a+b;
+        // function pure(a,b){
+        //     return a+b;
 
-        }
-        let global=10;
-        function impure(a){
-            global++;
-            return global+a;
-        }
-        console.log(pure(2,2));
-        console.log(pure(2,2));
+        // }
+        // let global=10;
+        // function impure(a){
+        //     global++;
+        //     return global+a;
+        // }
+        // console.log(pure(2,2));
+        // console.log(pure(2,2));
 
-        console.log(impure(2,2));
-        console.log(impure(2,2));
+        // console.log(impure(2,2));
+        // console.log(impure(2,2));
+
+
+
+
+        //-----------------------------Que=3 (Destructuring)---------------------------------
+        
+        function abcd({name,age,city,country}){
+            console.log(name);
+            console.log(age);
+        }
+        abcd({name:"Ashish Chandel",age:20,city:"Fatehabad",country:"India"})
