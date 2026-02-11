@@ -694,14 +694,31 @@
 
 
 
-        //-----------------------------Que=1 (High Order Function--------------------------
+        //-----------------------------Que=1 (High Order Function)--------------------------
 
-        function abcd(fn){
-            fn();
-            fn();
-            fn();
-        }
-        abcd(function(){
-            console.log("Hello World");
-        })
+        // function abcd(fn){
+        //     fn();
+        //     fn();
+        //     fn();
+        // }
+        // abcd(function(){
+        //     console.log("Hello World");
+        // })
         
+
+        //-----------------------------Que=2 (Pure & Inpure Function)--------------------------
+
+        function pure(a,b){
+            return a+b;
+
+        }
+        let global=10;
+        function impure(a){
+            global++;
+            return global+a;
+        }
+        console.log(pure(2,2));
+        console.log(pure(2,2));
+
+        console.log(impure(2,2));
+        console.log(impure(2,2));
