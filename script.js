@@ -770,8 +770,18 @@
 
         //-----------------------------Que=12 filter()---------------------------
 
-        let arr=[1,2,3,4,5,6,7,8,9,10];
-        let newarr=arr.filter((val)=>{
-            return val%2===0;
-        });
-        console.log(newarr);
+        // let arr=[1,2,3,4,5,6,7,8,9,10];
+        // let newarr=arr.filter((val)=>{
+        //     return val%2===0;
+        // });
+        // console.log(newarr);
+
+
+
+        //-----------------------------Que=13 reduce()---------------------------
+
+        let salary=[10000,20000,30000,40000,50000];
+        let totalsalary=salary.reduce(function(acc,val){
+            return acc+val;
+        },0)
+        console.log(totalsalary);
