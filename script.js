@@ -694,71 +694,14 @@
 
 
 
-        //-----------------------------Que=1--------------------------
+        //-----------------------------Que=1 (High Order Function--------------------------
 
-        // function runTwice(fn){
-        //     fn();
-        //     fn();
-        // }
-        // runTwice(function(){
-        //     console.log("Hello from Ashish Chandel Developer");
-        // });
-
-
-
-
-
-        //-----------------------------Que=2--------------------------
-
-        // function pure(a,b=80){
-        //     console.log(a+b);
-        // }
-        // pure(10);
-        // pure(10);
-        // pure(10);
-
-        // let num=30;
-        // function impure(a){
-        //     console.log(num+Math.random()+a);
-        // }
-        // impure(10);
-        // impure(10);
-        // impure(10);
-
-
-
-
-        //-----------------------------Que=3--------------------------
-
-        // function abcd({name,age,city,country}){
-        //     console.log(`Employee Name is: ${name} who is ${age} years old and lives in ${city}, ${country}`);
-        // }
-        // abcd({name:"ashish",age:20,city:"fatehabad",country:"india"});
-
-
-
-        //-----------------------------Que=6--------------------------
-
-        // let arr=[20,21,55,34,90,23]
-        // let arr2=arr.filter(function(val){
-        //     return val%2===0;
-        // })
-        // console.log(arr2);
-
-
-
-
-        //----------------------------Que=7--------------------------
-
-        function abcd(...nums){
-            let ans1=nums.reduce(function(acc,ass){
-                return acc+ass;
-            },0);
-            console.log(ans1);
-
+        function abcd(fn){
+            fn();
+            fn();
+            fn();
         }
-        abcd(1,2,3,4,5,6,7,8,9,10);
-
-
-
-
+        abcd(function(){
+            console.log("Hello World");
+        })
+        
